@@ -1,2 +1,3 @@
-import * as React from "react";
-export * from "./Button";
+import './tailwind.css';
+
+export * from './components/Button';
