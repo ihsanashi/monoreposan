@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react';
-import { cva, VariantProps } from 'class-variance-authority';
+import { ComponentProps, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
+import { cva, VariantProps } from 'class-variance-authority';
 
 const boxVariants = cva('ui-w-full ui-block');
 
-export interface BoxProps
-  extends HTMLDivElement,
-    VariantProps<typeof boxVariants> {
+type BaseProps = ComponentProps<'div'>;
+
+export interface BoxProps extends BaseProps, VariantProps<typeof boxVariants> {
   className?: string;
   children?: ReactNode;
 }
@@ -18,3 +18,5 @@ export function Box({ className, children, ...props }: BoxProps) {
     </div>
   );
 }
+
+Box.displayName = 'Box';
