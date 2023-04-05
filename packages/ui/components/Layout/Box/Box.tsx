@@ -2,7 +2,7 @@ import { ComponentProps, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { cva, VariantProps } from 'class-variance-authority';
 
-const boxVariants = cva('ui-w-full ui-block');
+const boxVariants = cva('w-full block');
 
 type BaseProps = ComponentProps<'div'>;
 

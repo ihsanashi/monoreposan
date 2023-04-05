@@ -2,10 +2,10 @@ import { twMerge } from 'tailwind-merge';
 import { ReactNode, ComponentProps } from 'react';
 import { cva, VariantProps } from 'class-variance-authority';
 
-const containerVariants = cva('ui-container', {
+const containerVariants = cva('container', {
   variants: {
     centerContent: {
-      true: 'ui-mx-auto',
+      true: 'mx-auto',
     },
   },
   defaultVariants: {
