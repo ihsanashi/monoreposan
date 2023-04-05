@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ui": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -19,7 +19,6 @@
     "autoprefixer": "^10.4.14",
     "eslint-config-custom": "workspace:*",
     "postcss": "^8.4.21",
-    "tailwind-config": "workspace:*",
     "tailwindcss": "^3.2.4",
     "tsconfig": "workspace:*",
     "typescript": "^5.0.3",
