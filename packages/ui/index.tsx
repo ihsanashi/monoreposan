@@ -1,5 +1,5 @@
-import './tailwind.css';
+import './styles/index.css';
 
-export * from './components/Button';
 export * from './components/Layout/Box';
 export * from './components/Layout/Container';
+export * from './components/Layout/Flex';
